@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | TinyURL</title>
+    <link rel="stylesheet" href="tinyurl.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <h3>TINYURL</h3>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="features.html">Features</a>
+        <a href="domains.html">Domains</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="login.html"><button class="btn">Log in</button></a>
+        <a href="signup.html"><button class="btn">Sign up</button></a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="resources-hero">
+    <h1>Resources to Help You Succeed</h1>
+    <p>
+        Guides, documentation, and tools to help you get the most
+        out of TinyURL.
+    </p>
+</section>
+
+<!-- ================= RESOURCES GRID ================= -->
+<section class="resources-section">
+
+    <div class="resources-grid">
+
+        <div class="resource-card">
+            <h3>📝 Blog</h3>
+            <p>
+                Learn best practices, marketing tips, and product updates.
+            </p>
+            <a href="#">Read Articles →</a>
+        </div>
+
+        <div class="resource-card">
+            <h3>📖 Documentation</h3>
+            <p>
+                Step-by-step guides to help you set up and use TinyURL.
+            </p>
+            <a href="#">View Docs →</a>
+        </div>
+
+        <div class="resource-card">
+            <h3>👨‍💻 For Developers</h3>
+            <p>
+                API references, SDKs, and integration examples.
+            </p>
+            <a href="#">Developer Hub →</a>
+        </div>
+
+        <div class="resource-card">
+            <h3>🎓 Tutorials</h3>
+            <p>
+                Learn how to shorten, track, and optimize links effectively.
+            </p>
+            <a href="#">Watch Tutorials →</a>
+        </div>
+
+        <div class="resource-card">
+            <h3>❓ Help Center</h3>
+            <p>
+                Find answers to common questions and troubleshooting tips.
+            </p>
+            <a href="#">Get Help →</a>
+        </div>
+
+        <div class="resource-card">
+            <h3>📣 Product Updates</h3>
+            <p>
+                Stay updated with the latest features and improvements.
+            </p>
+            <a href="#">See Updates →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="resources-cta">
+    <h2>Need More Help?</h2>
+    <p>Our support team is always here to help you succeed.</p>
+    <a href="#">
+        <button class="btnp1">Contact Support</button>
+    </a>
+</section>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domains | TinyURL</title>
+    <link rel="stylesheet" href="tinyurl.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <h3>TINYURL</h3>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="features.html">Features</a>
+        <a href="domains.html" class="active">Domains</a>
+        <a href="resources.html">Resources</a>
+        <a href="login.html"><button class="btn">Log in</button></a>
+        <a href="signup.html"><button class="btn">Sign up</button></a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- ================= DOMAINS HERO ================= -->
+<section class="domains-hero">
+    <h1>Branded Domains That Build Trust</h1>
+    <p>
+        Use your own custom domain to create short links that look professional
+        and increase click-through rates.
+    </p>
+</section>
+
+<!-- ================= DOMAINS CONTENT ================= -->
+<section class="domains-section">
+
+    <div class="domains-grid">
+
+        <div class="domain-card">
+            <h3>🔗 Custom Branded Domains</h3>
+            <p>
+                Replace generic short links with your own brand name and boost credibility.
+            </p>
+        </div>
+
+        <div class="domain-card">
+            <h3>⚡ Easy Setup</h3>
+            <p>
+                Connect your domain in minutes with step-by-step DNS guidance.
+            </p>
+        </div>
+
+        <div class="domain-card">
+            <h3>🔒 Secure by Default</h3>
+            <p>
+                Free SSL certificates included for all branded domains.
+            </p>
+        </div>
+
+        <div class="domain-card">
+            <h3>📈 Better Engagement</h3>
+            <p>
+                Branded links increase trust and improve click-through rates.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="domains-cta">
+    <h2>Ready to Use Your Own Domain?</h2>
+    <p>Upgrade to Pro and start creating branded short links today.</p>
+    <a href="plans.html">
+        <button class="btnp1">View Plans</button>
+    </a>
+</section>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

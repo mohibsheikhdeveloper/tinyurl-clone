@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinyURL Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tinyurl.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <h3>TINYURL</h3>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="plans.html" class="active">Plans</a>
+        <a href="features.html">Features</a>
+        <a href="domains.html">Domains</a>
+        <a href="resources.html">Resources</a>
+        <a href="login.html"><button class="btn">Log in</button></a>
+        <a href="signup.html"><button class="btn">Sign up</button></a>
+    </nav>
+</header>
+
+<!-- ================= PLANS SECTION ================= -->
+<section class="plans-section">
+    <h1>Choose the Right Plan for You</h1>
+    <p>Powerful link management for individuals and businesses</p>
+
+    <div class="plans-container">
+
+        <!-- FREE PLAN -->
+        <div class="plan-card">
+            <h2>Free</h2>
+            <h3>$0 / month</h3>
+            <ul>
+                <li>Basic URL shortening</li>
+                <li>Limited analytics</li>
+                <li>Standard domain</li>
+            </ul>
+            <button onclick="selectPlan('Free')">Get Started</button>
+        </div>
+
+        <!-- PREMIUM PLAN -->
+        <div class="plan-card featured">
+            <h2>Premium</h2>
+            <h3>$9 / month</h3>
+            <ul>
+                <li>Branded links</li>
+                <li>Advanced analytics</li>
+                <li>Custom aliases</li>
+                <li>Priority support</li>
+            </ul>
+            <button onclick="selectPlan('Premium')">Choose Plan</button>
+        </div>
+
+        <!-- BUSINESS PLAN -->
+        <div class="plan-card">
+            <h2>Business</h2>
+            <h3>$29 / month</h3>
+            <ul>
+                <li>Bulk URL shortening</li>
+                <li>API access</li>
+                <li>Team management</li>
+                <li>Full analytics</li>
+            </ul>
+            <button onclick="selectPlan('Business')">Choose Plan</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

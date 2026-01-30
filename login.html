@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TinyURL</title>
+    <link rel="stylesheet" href="tinyurl.css">
+</head>
+<body class="login-body">
+
+    <div class="login-container">
+        <h1>Welcome Back 👋</h1>
+        <p>Login to manage your short links</p>
+
+        <form id="loginForm" class="login-form">
+            <label>Email Address</label>
+            <input id="loginEmail" type="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input id="loginPassword" type="password" placeholder="Enter your password" required>
+
+            <div class="login-options">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="forgot-password.html" onclick="forgotPassword()">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+
+        <p class="signup-text">
+            Don’t have an account? <a href="signup.html">Create one</a>
+        </p>
+    </div>
+
+</body>
+</html>

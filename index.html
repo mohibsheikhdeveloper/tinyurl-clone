@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinyURL | URL Shortener</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="TinyURL – Professional URL shortener with analytics and branded links."
+    />
+    <meta name="keywords" content="URL shortener, tinyurl, link shortener" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="tinyurl.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <h3>TINYURL</h3>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <a href="plans.html">Plans</a>
+        <a href="features.html">Features</a>
+        <a href="domains.html">Domains</a>
+        <a href="resources.html">Resources</a>
+        <a href="login.html" class="btn">Log in</a>
+        <a href="signup.html" class="btn">Sign up</a>
+        <button class="btn" onclick="toggleTheme()">🌙</button>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <main class="main">
+      <!-- LEFT -->
+      <section class="part1">
+        <h2>URL Shortener, Branded Short Links <br />& Analytics</h2>
+
+        <p>
+          Welcome to the original link shortener — simplifying the internet
+          through the power of URLs since 2002.
+        </p>
+
+        <p>
+          Use branded domains for fully custom links, track analytics, and enjoy
+          powerful features with our paid plans.
+        </p>
+
+        <a href="plans.html">
+          <button class="btnp">View Plans</button>
+        </a>
+
+        <a href="signup.html">
+          <button class="btnp1">Create Free Account</button>
+        </a>
+      </section>
+
+      <!-- RIGHT -->
+      <section class="part2">
+        <h2>Shorten a Link</h2>
+
+        <label>
+          <span class="txt">Long URL *</span>
+          <input
+            type="url"
+            class="text"
+            placeholder="Paste long URL here"
+            required
+          />
+        </label>
+
+        <label>
+          <span class="txt">Domain</span>
+          <input type="text" class="text" placeholder="tinyurl.com" />
+        </label>
+
+        <label>
+          <span class="txt">Alias</span>
+          <input type="text" class="text" placeholder="Add alias here" />
+        </label>
+
+        <button class="Shorten">Shorten Link</button>
+        <p id="result" style="margin-top: 15px; font-weight: bold"></p>
+      </section>
+    </main>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="box">
+      <h1>TinyURL Plans Include</h1>
+
+      <div class="name">
+        <div class="rashid">
+          <h3>Detailed Link Analytics</h3>
+          <p>Track clicks, performance, and audience reach easily.</p>
+          <img src="1.jpeg" alt="Analytics" />
+        </div>
+
+        <div class="khan">
+          <h3>Fully Branded Domains</h3>
+          <p>Customize links with branded domains for trust and identity.</p>
+          <img src="2.jpeg" alt="Domains" />
+        </div>
+
+        <div class="farhan">
+          <h3>Link Management</h3>
+          <p>Search, edit, and manage thousands of links in one place.</p>
+          <img src="3.jpeg" alt="Management" />
+        </div>
+
+        <div class="abdullah">
+          <h3>Bulk Short URLs</h3>
+          <p>Create thousands of short links instantly using API.</p>
+          <img src="4.jpeg" alt="Bulk URLs" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIDEO ================= -->
+    <section class="video">
+      <div class="vid1"></div>
+
+      <div class="vid2">
+        <h1>Link Shortening Done Quick & Easy</h1>
+
+        <p>One of the first URL shorteners — still the best.</p>
+        <p>Perfect for social media, ads, emails, and campaigns.</p>
+        <p>Say goodbye to long, messy links forever.</p>
+<a href="plans.html">
+        <button class="btnp">View Plans</button>
+        </a>
+        <a href="signup.html">
+        <button class="btnp1">Create Free Account</button>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="graph">
+      <div class="gr1">
+        <h1>Transforming the Digital Landscape Since 2002</h1>
+        <p>Trusted by marketers, influencers, and global businesses.</p>
+
+        <div class="bold">
+          <div class="bold1">
+            <h1>Billions</h1>
+            <h2>24 Years</h2>
+            <h2>30,624,943,678</h2>
+          </div>
+          <div class="bold2">
+            <h3>Redirects per month</h3>
+            <h3>Years of service</h3>
+            <h3>URLs shortened</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="gr2"></div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="upf">
+      <h1>Ready for Shorter, Smarter Links?</h1>
+      <p>Create a free account or upgrade to a paid plan today.</p>
+
+    <a href="plans.html">
+          <button class="btnp">View Plans</button>
+        </a>
+
+        <a href="signup.html">
+          <button class="btnp1">Create Free Account</button>
+        </a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="features">
+        <h1>Features</h1>
+        <h3>Link Editor</h3>
+        <h3>Link Management</h3>
+        <h3>Branded Links</h3>
+        <h3>QR Codes</h3>
+        <h3>API</h3>
+      </div>
+
+      <div class="resources">
+        <h1>Resources</h1>
+        <h3>Blog</h3>
+        <h3>Developers</h3>
+        <h3>About Us</h3>
+      </div>
+
+      <div class="contact">
+        <h1>Contact</h1>
+        <h3>Help Desk</h3>
+        <h3>Sales</h3>
+        <h3>Support</h3>
+      </div>
+
+      <div class="legal">
+        <h1>Legal</h1>
+        <h3>Terms</h3>
+        <h3>Privacy</h3>
+        <h3>Cookies</h3>
+      </div>
+    </footer>
+
+    <small>© Mohib Sheikh 2026 | All rights reserved</small>
+
+  <!-- ================= JS ================= -->
+<script>
+function toggleMenu() {
+    document.querySelector("nav").classList.toggle("active");
+}
+
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+}
+
+document.querySelector(".Shorten").addEventListener("click", () => {
+    const input = document.querySelector(".text").value;
+    if (!input) {
+        alert("Please enter a URL");
+        return;
+    }
+    const shortUrl = "https://tinyurl.com/" + Math.random().toString(36).substring(7);
+    document.getElementById("result").innerText = "Short URL: " + shortUrl;
+});
+</script>
+  
+  </body>
+</html>

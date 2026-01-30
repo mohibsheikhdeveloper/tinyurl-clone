@@ -1,0 +1,828 @@
+/* ================= RESET & GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #0e1a24;
+    color: #f1f1f1;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #0B6885;
+    color: white;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Buttons */
+.btn {
+    background-color: #002342;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #00162a;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* ================= HERO ================= */
+.main {
+    background-color: #002342;
+    color: white;
+    padding: 60px 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.part1 {
+    max-width: 550px;
+}
+
+.part1 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.part1 p {
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+/* CTA buttons */
+.btnp {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btnp1 {
+    background-color: #0B6885;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================= SHORTENER BOX ================= */
+.part2 {
+    background-color: #f1f5f6;
+    color: #222;
+    padding: 30px;
+    border-radius: 25px;
+    width: 420px;
+}
+
+.part2 h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.part2 label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.txt {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input.text {
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.Shorten {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ================= FEATURES ================= */
+.box {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.box h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.name {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name div {
+    width: 250px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.name div:hover {
+    transform: translateY(-10px);
+}
+
+.name img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+/* ================= VIDEO SECTION ================= */
+.video {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vid1 {
+    flex: 1;
+    min-height: 400px;
+    background: url(5.jpeg) center / cover no-repeat;
+}
+
+.vid2 {
+    flex: 1;
+    background-color: #0D7693;
+    color: white;
+    padding: 60px;
+}
+
+.vid2 h1 {
+    margin-bottom: 20px;
+}
+
+/* ================= STATS ================= */
+.graph {
+    background-color: #0B6885;
+    color: white;
+    padding: 70px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gr1 {
+    flex: 1;
+}
+
+.bold {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gr2 {
+    flex: 1;
+    min-height: 350px;
+    background: url(6.jpeg) center / contain no-repeat;
+}
+
+/* ================= CTA ================= */
+.upf {
+    background-color: #002342;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #0B6885;
+    color: white;
+    padding: 60px 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+footer div {
+    width: 220px;
+}
+
+footer h1 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+footer h3 {
+    font-weight: normal;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+footer h3:hover {
+    text-decoration: underline;
+}
+
+small {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #002342;
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        flex-direction: column;
+    }
+
+    .graph {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #0B6885;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .part2 {
+        width: 100%;
+    }
+
+    .vid2 {
+        padding: 30px;
+    }
+}
+/* ================= LOGIN PAGE ================= */
+
+.login-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #002342, #0B6885);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    width: 400px;
+    padding: 40px 35px;
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+    color: #002342;
+}
+
+.login-container p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 18px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #0B6885;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-options a {
+    text-decoration: none;
+    color: #0B6885;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #0B6885;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #09566f;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #0B6885;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 25px;
+    }
+}
+/* ================= NAVBAR ACTIVE ================= */
+nav a.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* ================= PLANS PAGE ================= */
+
+.plans-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+.plans-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.plans-section p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+.plan-card h2 {
+    font-size: 26px;
+}
+
+.plan-card h3 {
+    color: #0B6885;
+    margin: 15px 0;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+}
+
+.plan-card button {
+    background: #0B6885;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.plan-card button:hover {
+    background: #002342;
+}
+
+.plan-card.featured {
+    border: 3px solid #0B6885;
+    transform: scale(1.05);
+}
+
+/* ================= FEATURES PAGE ================= */
+
+.features-hero {
+    padding: 90px 40px;
+    background: linear-gradient(135deg, #002342, #0B6885);
+    color: white;
+    text-align: center;
+}
+
+.features-hero h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.features-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Grid */
+.features-section {
+    padding: 80px 40px;
+    background-color: #f6f9fc;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #002342;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-hero h1 {
+        font-size: 32px;
+    }
+}
+/* ================= DOMAINS PAGE ================= */
+
+.domains-hero {
+    padding: 90px 40px;
+    background: linear-gradient(135deg, #002342, #0B6885);
+    color: white;
+    text-align: center;
+}
+
+.domains-hero h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.domains-hero p {
+    font-size: 18px;
+    max-width: 720px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* Content */
+.domains-section {
+    padding: 80px 40px;
+    background-color: #f6f9fc;
+}
+
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.domain-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.domain-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.domain-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #002342;
+}
+
+.domain-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* CTA */
+.domains-cta {
+    background-color: #002342;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.domains-cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.domains-cta p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+    .domains-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .domains-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .domains-hero h1 {
+        font-size: 32px;
+    }
+}
+/* ================= RESOURCES PAGE ================= */
+
+.resources-hero {
+    padding: 90px 40px;
+    background: linear-gradient(135deg, #002342, #0B6885);
+    color: white;
+    text-align: center;
+}
+
+.resources-hero h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.resources-hero p {
+    font-size: 18px;
+    max-width: 720px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* Grid */
+.resources-section {
+    padding: 80px 40px;
+    background-color: #f6f9fc;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.resource-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #002342;
+}
+
+.resource-card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.resource-card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0B6885;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+
+/* CTA */
+.resources-cta {
+    background-color: #002342;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.resources-cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.resources-cta p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-hero h1 {
+        font-size: 32px;
+    }
+}
+.btnp:hover,
+.btnp1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
